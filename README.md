@@ -192,10 +192,10 @@ summary(lr)
 <img width="411" alt="スクリーンショット 2023-07-25 16 32 43" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/b67d51af-fede-488d-ac98-d7e13df02e81">
 
 出力結果の見方は、下記の通り。\
-﻿﻿<img width="1167" alt="スクリーンショット 2023-07-25 15 59 29" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f8ea1957-fff3-4943-b650-ea2db99d7c99">
+﻿﻿<img width="761" alt="スクリーンショット 2023-07-25 16 43 40" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/bd1c87b6-35ce-4d4d-b71f-dc2e8c6585f4">
 
 これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する（パワーポイントなど任意のソフトを用いて）。\
-<img width="601" alt="スクリーンショット 2023-07-25 15 36 32" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/50d11c00-988a-47ae-be12-c7abbef5030c">
+<img width="910" alt="スクリーンショット 2023-07-25 16 43 05" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/5e6987ab-c8df-4258-88bf-34b0a3b9bb33">
 
 # レポート課題
 以下の内容をRで実行し、レポートを作成すること。
