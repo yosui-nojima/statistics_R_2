@@ -47,6 +47,7 @@ install.packages("openxlsx")
 ```
 R上でエクセルファイルを読み込む。
 ```
+library(openxlsx)
 data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx", colNames = T) #ファイルの読み込み
 colnames(data) <- data[1,] #列名の指定
 row.names(data) <- data[,2] #行明の指定
