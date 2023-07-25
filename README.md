@@ -74,7 +74,7 @@ var.test(maguro, sake, alternative = "two.sided")
 以下の結果が出力される。\
 <img width="435" alt="スクリーンショット 2023-07-25 13 50 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f54cd568-8a58-4cc5-992b-ee559015b040">\
 ```p-value = 1.325e-12```の部分が*P*値を意味する。\
-有意水準αを5%とすると、*P*<αのため帰無仮説(σ1=σ2)は棄却されるため、『まぐろ』の全国の年間支出金額の分散と『さけ』の全国の年間支出金額の分散は異なると言える。\
+有意水準αを5%とすると、*P*<αのため帰無仮説(σ1=σ2)は棄却される。つまり、『まぐろ』の全国の年間支出金額の分散と『さけ』の全国の年間支出金額の分散は異なると言える。\
 したがって、その後に平均の差の検定でt検定を行う場合は、Welchの*t*検定を行う。
 
 ### *t*検定
@@ -86,9 +86,21 @@ t検定は```t.test()```関数を使って実行する。
 - ```alternative = ```: 両側検定（```"two.sided"```と指定）か、片側検定（```"greater"```または```less```と指定）
 ```
 下記を実行する。
-t.test(maguro, sake, var.equal=F, paired=F, alternative = native = "two.sided")
+t.test(maguro, sake, var.equal=F, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
+<img width="437" alt="スクリーンショット 2023-07-25 14 09 01" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/782bd0a4-9013-4181-8cbb-826834fc4d58">\
+```p-value = 0.06738```の部分が*P*値を意味する。\
+有意水準αを5%とすると、*P*>αのため帰無仮説(σ1=σ2)が採択される。つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。\
+
+#### Studentの*t*検定
+念のためStudentの*t*検定の実行方法も記載する。
+```var.equal = T```に変えて下記を実行する。
+```
+下記を実行する。
+t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
+```
+
 
 
 
