@@ -173,7 +173,7 @@ cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", c
 『チーズ』の年間支出金額を説明変数、『パスタ』の年間支出金額を目的変数として最小二乗法で標本回帰直線を得る。\
 下記を実行する。
 ```
-lr <- lm(pasta ~ cheese, data=data.frame(both2))
+lr <- lm(cheese ~ pasta, data=data.frame(both2))
 abline(lr, col="red")
 ```
 ```lm()```関数では、目的関数を入力し、~(チルダ)、説明変数の順番で引数を入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
