@@ -14,7 +14,11 @@
 - Rは開発者のRoss Ihaka、Robert Clifford Gentlemanにより開発され、Rという名称は両者のイニシャルでもある。
 - 現在は、R Development Core Teamによってメンテナンス・拡張がされている。
 ## 3. 使用するデータ
-　独立行政法人統計センター[https://www.nstac.go.jp/]
+[独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用にが作成・公開している統計データ。\
+今回は、2023年度の家計調査データこのSSDSEから取得し、解析用データとする。\
+### 必要なファイルのダウンロード
+
+ 
 ## 4. 仮説検定のR実装
 
 今回はt検定について説明します。
