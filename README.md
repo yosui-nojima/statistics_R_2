@@ -61,8 +61,8 @@ data <- data[-1,-c(1:5)] #不要な行・列の削除
 本来はこれらのデータについて正規確立プロットなどで、データが正規分布に従っているかどうかを確認するが、今回は正規分布に従っていると仮定して検定を行う。\
 下記を実行して使用するデータを```data```オブジェクトから抽出し、それぞれ```maguro```と```sake```というオブジェクトに格納する。
 ```
-maguro <- as.numeric(data[,"まぐろ"])
-sake <- as.numeric(data[,"さけ"])
+maguro <- as.numeric(data[,"まぐろ"]) #各自選択した群がわかるオブジェクト名に変更すること
+sake <- as.numeric(data[,"さけ"]) #各自選択した群がわかるオブジェクト名に変更すること
 ```
 ```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）
 ### データの可視化
@@ -73,7 +73,7 @@ both <- cbind(maguro, sake)
 xm <- apply(both, 2, mean)
 xs <- apply(both, 2, sd)
 # bar chart
-b <- barplot(xm, xlab = "Fish", ylab = "Yen", ylim = c(0, max(xm + xs)))
+b <- barplot(xm, ylab = "Yen", ylim = c(0, max(xm + xs)))
 # error bar
 arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
 ```
@@ -114,7 +114,7 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 <img width="437" alt="スクリーンショット 2023-07-25 14 09 01" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/782bd0a4-9013-4181-8cbb-826834fc4d58">\
 ```p-value = 0.06738```の部分が*P*値を意味する。\
 有意水準αを5%とすると、*P*>αのため帰無仮説(H0:µ1=µ2)が採択される。\
-つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。\
+つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
 
 #### Studentの*t*検定
 念のためStudentの*t*検定の実行方法も記載する。
@@ -132,8 +132,8 @@ t.test(maguro, sake, var.equal=T, paired=F, alternative = "two.sided")
 これについても、本来は正規確立プロットなどでデータが正規分布に従っているかどうかを確認するが、今回は正規分布に従っていると仮定して検定を行う。
 下記を実行して使用するデータを```data```オブジェクトから抽出し、それぞれ```pasta```と```cheese```というオブジェクトに格納する。
 ```
-pasta <- as.numeric(data[,"パスタ"])
-cheese <- as.numeric(data[,"チーズ"])
+pasta <- as.numeric(data[,"パスタ"]) #各自選択した変数がわかるオブジェクト名に変更すること
+cheese <- as.numeric(data[,"チーズ"]) #各自選択した変数がわかるオブジェクト名に変更すること
 ```
 ```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）
 
