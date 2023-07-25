@@ -116,8 +116,8 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
 
 #### Studentの*t*検定
-念のためStudentの*t*検定の実行方法も記載する。
-```var.equal = T```に変えて下記を実行する。
+念のためStudentの*t*検定の実行方法も記載する。\
+```var.equal = T```に変えて下記を実行する。\
 下記を実行する。
 ```
 t.test(maguro, sake, var.equal=T, paired=F, alternative = "two.sided")
