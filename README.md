@@ -16,27 +16,28 @@
 ## 3. 使用するデータ
 [独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用にが作成・公開している統計データ。\
 今回は、2023年度の家計調査データこのSSDSEから取得し、解析用データとする。\
-### 必要なファイルのダウンロード
+### 使用するファイルについて
 #### 1. 赤枠の『統計を活かす』をクリック
 <img width="2556" alt="スクリーンショット 2023-07-25 12 54 07" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/c74c37dd-d320-48b5-a5d2-1b0e6c8e4a88">
 
 #### 2. 『SSDSE（教育用標準データセット）』をクッリク
 <img width="2559" alt="スクリーンショット 2023-07-25 12 54 16" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/181adf1e-2649-4e70-a901-f996464c2d5e">
 
-#### 3. 『SSDSE-C-2023』をクリックしてダウンロード
+#### 3. この演習では、『SSDSE-C-2023』のデータを使用する
 <img width="1281" alt="スクリーンショット 2023-07-25 12 54 31" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/d45e187d-b3f1-4428-a5b8-7efbff7787d6">
 
-### ダウンロードしたエクセルファイルをR上で読み込む
+### エクセルファイルをR上で読み込む
 エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要があります。\
+また、今回はサーバーから直接R上に読み込む。エクセル上で実際にファイルを確認したい人は上記の**使用するファイルについて**でファイルをダウンロードしてして下さい。
 下記をR上で実行する。
 ```
 install.packages("openxlsx")
 ```
 R上でエクセルファイルを読み込む。
 ```
-library(openxlsx)
-data <- read.xlsx("~/Downloads/SSDSE-C-2023.xlsx")
+data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx", colNames = T)
 colnames(data) <- data[1,]
+row.names(data) <- data[,2]
 data <- data[-1,-c(1:5)]
 ```
 
