@@ -51,7 +51,7 @@ library(openxlsx)
 data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx", colNames = T) #ファイルの読み込み
 colnames(data) <- data[1,] #列名の指定
 row.names(data) <- data[,2] #行明の指定
-data <- data[-1,-c(1:5)] #不要な行・列の削除
+data <- data[-c(1,2),-c(1:5)] #不要な行・列の削除
 ```
 
 ## 4. 仮説検定のR実装
@@ -73,10 +73,8 @@ sake <- as.numeric(data[,"さけ"]) #各自選択した群がわかるオブジ�
 both <- cbind(maguro, sake)
 xm <- apply(both, 2, mean)
 xs <- apply(both, 2, sd)
-# bar chart
-b <- barplot(xm, ylab = "Yen", ylim = c(0, max(xm + xs)))
-# error bar
-arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
+b <- barplot(xm, ylab = "Yen", ylim = c(0, max(xm + xs))) #棒グラフを出力
+arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1) #エラーバーを出力
 ```
 下図が出力される。\
 ![Rplot14](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/4dce1e45-319b-45a6-9e35-a068974bdfa6)
