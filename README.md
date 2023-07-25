@@ -72,7 +72,7 @@ sake <- as.numeric(data[,"さけ"])
 var.test(maguro, sake, alternative = "two.sided")
 ```
 以下の結果が出力される。\
-<img width="435" alt="スクリーンショット 2023-07-25 13 50 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f54cd568-8a58-4cc5-992b-ee559015b040">
+<img width="435" alt="スクリーンショット 2023-07-25 13 50 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f54cd568-8a58-4cc5-992b-ee559015b040">\
 ```p-value = 1.325e-12```の部分が*P*値を意味する。\
 有意水準αを5%とすると、*P*<αのため帰無仮説(σ1=σ2)は棄却されるため、『まぐろ』の全国の年間支出金額の分散と『さけ』の全国の年間支出金額の分散は異なると言える。\
 したがって、その後に平均の差の検定でt検定を行う場合は、Welchの*t*検定を行う。
@@ -81,7 +81,15 @@ var.test(maguro, sake, alternative = "two.sided")
 t検定は```t.test()```関数を使って実行する。
 #### Welchの*t*検定
 ```t.test()```関数には以下の引数を指定することが可能。
-- 
+- ```var.equal = ```: 等分散かどうかを指定する。```F```で等分散でない（つまりWelchの*t*検定）、```T```で等分散（つまりStudentの*t*検定）
+- ```paired = ```: 対応があるかどうか。```F```で対応がない、```T```で対応がある
+- ```alternative = ```: 両側検定（```"two.sided"```と指定）か、片側検定（```"greater"```または```less```と指定）
+```
+下記を実行する。
+t.test(maguro, sake, var.equal=F, paired=F, alternative = native = "two.sided")
+```
+以下の結果が出力される。\
+
 
 
 
