@@ -78,7 +78,7 @@ b <- barplot(xm, xlab = "Fish", ylab = "Yen", ylim = c(0, max(xm + xs)))
 arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
 ```
 下図が出力される。
-![Rplot09](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/702415b8-37b0-4498-a165-b408b3052d89)\
+![Rplot09](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/702415b8-37b0-4498-a165-b408b3052d89)
 
 棒の頂点が平均値を示す。\
 標準偏差はエラーバー（棒の上についているひげの部分）で示している。\
