@@ -20,10 +20,10 @@
 #### 1. 赤枠の『統計を活かす』をクリック
 <img width="2556" alt="スクリーンショット 2023-07-25 12 54 07" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/c74c37dd-d320-48b5-a5d2-1b0e6c8e4a88">
 
-#### 2. 『SSDSE（教育用標準データセット）』をクッリク
+#### 2. 赤枠の『SSDSE（教育用標準データセット）』をクッリク
 <img width="2559" alt="スクリーンショット 2023-07-25 12 54 16" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/181adf1e-2649-4e70-a901-f996464c2d5e">
 
-#### 3. この演習では、『SSDSE-C-2023』のデータをクリックしてダウンロードする
+#### 3. 赤枠の『SSDSE-C-2023』のデータをクリックしてダウンロードする
 <img width="1281" alt="スクリーンショット 2023-07-25 12 54 31" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/d45e187d-b3f1-4428-a5b8-7efbff7787d6">
 
 #### 4. 任意の表計算ソフトで開くと以下の内容を含むデータを確認することができる
@@ -39,8 +39,8 @@
 [https://www.nstac.go.jp/sys/files/kaisetsu-C-2023.pdf](https://www.nstac.go.jp/sys/files/kaisetsu-C-2023.pdf)
 
 ### エクセルファイルをR上で読み込む
-エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要があります。\
-また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存されている。）\
+エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要がある。\
+また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存される。）\
 下記をR上で実行する。
 ```
 install.packages("openxlsx")
