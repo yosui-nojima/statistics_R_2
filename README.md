@@ -143,7 +143,7 @@ both2 <- cbind(pasta, cheese)
 plot(both2)
 ```
 ![Rplot10](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/29420563-2125-41be-93f2-bc8cf7e41cbd)\
-散布図のみでは関連性の主張は定性的であるため、２変数間の線形性の指標である相関係数（Pearsonの相関係数）を算出する。
+散布図のみでは関連性の主張は定性的であるため、2変数間の線形性の指標である相関係数（Pearsonの相関係数）を算出する。
 
 ### 相関分析の実行
 相関分析は```cor.test()```関数を使って実行する。\
