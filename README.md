@@ -120,7 +120,7 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 ```var.equal = T```に変えて下記を実行する。
 ```
 下記を実行する。
-t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
+t.test(maguro, sake, var.equal=T, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
 <img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">
