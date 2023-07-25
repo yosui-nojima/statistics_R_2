@@ -65,6 +65,24 @@ maguro <- as.numeric(data[,"まぐろ"])
 sake <- as.numeric(data[,"さけ"])
 ```
 ```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）
+### データの可視化
+『まぐろ』の全国の年間支出金額の平均と『さけ』全国の年間支出金額の平均を棒グラフで可視化する。\
+下記を実行する。
+```
+both <- cbind(maguro, sake)
+xm <- apply(both, 2, mean)
+xs <- apply(both, 2, sd)
+# bar chart
+b <- barplot(xm, xlab = "Fish", ylab = "Yen", ylim = c(0, max(xm + xs)))
+# error bar
+arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
+```
+
+棒の頂点が平均値を示す。\
+標準偏差はエラーバー（上図の棒の上についているひげの部分）で示している。
+
+
+
 ### F検定
 まずはF検定で等分散かそうでないかを検定する。\
 下記を実行する。
@@ -100,6 +118,10 @@ t.test(maguro, sake, var.equal=F, paired=F, alternative = "two.sided")
 下記を実行する。
 t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
 ```
+以下の結果が出力される。\
+<img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">\
+
+## 5. 相関分析のR実装
 
 
 
