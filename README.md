@@ -77,11 +77,11 @@ b <- barplot(xm, xlab = "Fish", ylab = "Yen", ylim = c(0, max(xm + xs)))
 # error bar
 arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
 ```
+![Rplot09](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/702415b8-37b0-4498-a165-b408b3052d89)\
 
 棒の頂点が平均値を示す。\
-標準偏差はエラーバー（上図の棒の上についているひげの部分）で示している。
-
-
+標準偏差はエラーバー（上図の棒の上についているひげの部分）で示している。\
+次のこのグラフで見られる差が本質的な差かどうかを仮説検定により調査する。
 
 ### F検定
 まずはF検定で等分散かそうでないかを検定する。\
@@ -99,17 +99,20 @@ var.test(maguro, sake, alternative = "two.sided")
 t検定は```t.test()```関数を使って実行する。
 #### Welchの*t*検定
 ```t.test()```関数には以下の引数を指定することが可能。
+- ```x = ```: ２群のうち一方のデータを入力
+- ```y = ```: ２群のうちもう一方のデータを入力
 - ```var.equal = ```: 等分散かどうかを指定する。```F```で等分散でない（つまりWelchの*t*検定）、```T```で等分散（つまりStudentの*t*検定）
 - ```paired = ```: 対応があるかどうか。```F```で対応がない、```T```で対応がある
 - ```alternative = ```: 両側検定（```"two.sided"```と指定）か、片側検定（```"greater"```または```less```と指定）
 ```
 下記を実行する。
-t.test(maguro, sake, var.equal=F, paired=F, alternative = "two.sided")
+t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
 <img width="437" alt="スクリーンショット 2023-07-25 14 09 01" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/782bd0a4-9013-4181-8cbb-826834fc4d58">\
 ```p-value = 0.06738```の部分が*P*値を意味する。\
-有意水準αを5%とすると、*P*>αのため帰無仮説(σ1=σ2)が採択される。つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。\
+有意水準αを5%とすると、*P*>αのため帰無仮説(σ1=σ2)が採択される。\
+つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。\
 
 #### Studentの*t*検定
 念のためStudentの*t*検定の実行方法も記載する。
@@ -119,9 +122,25 @@ t.test(maguro, sake, var.equal=F, paired=F, alternative = "two.sided")
 t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
 ```
 以下の結果が出力される。\
-<img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">\
+<img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">
 
 ## 5. 相関分析のR実装
+
+### 使用するデータ
+相関分析では、『パスタ』の年間支出金額と『チーズ』の年間支出金額を使用する。
+下記を実行して使用するデータを```data```オブジェクトから抽出し、それぞれ```pasta```と```cheese```というオブジェクトに格納する。
+```
+pasta <- as.numeric(data[,"パスタ"])
+cheese <- as.numeric(data[,"チーズ"])
+```
+```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）
+
+下記を実行する。
+```
+
+```
+- ```x = ```: ２変数のうち一方のデータを入力
+- ```y = ```: ２変数のうちもう一方のデータを入力
 
 
 
