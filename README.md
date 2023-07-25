@@ -17,13 +17,33 @@
 [独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用にが作成・公開している統計データ。\
 今回は、2023年度の家計調査データこのSSDSEから取得し、解析用データとする。\
 ### 必要なファイルのダウンロード
-1. 赤枠の『統計を活かす』をクリック
-[https://github.com/yosui-nojima/statistics-C1_R_2/issues/1#issuecomment-1649054610]
+#### 1. 赤枠の『統計を活かす』をクリック
+<img width="2556" alt="スクリーンショット 2023-07-25 12 54 07" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/c74c37dd-d320-48b5-a5d2-1b0e6c8e4a88">
 
- 
+#### 2. 『SSDSE（教育用標準データセット）』をクッリク
+<img width="2559" alt="スクリーンショット 2023-07-25 12 54 16" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/181adf1e-2649-4e70-a901-f996464c2d5e">
+
+#### 3. 『SSDSE-C-2023』をクリックしてダウンロード
+<img width="1281" alt="スクリーンショット 2023-07-25 12 54 31" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/d45e187d-b3f1-4428-a5b8-7efbff7787d6">
+
+### ダウンロードしたエクセルファイルをR上で読み込む
+エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要があります。\
+下記をR上で実行する。
+```
+install.packages("openxlsx")
+```
+R上でエクセルファイルを読み込む。
+```
+library(openxlsx)
+data <- read.xlsx("~/Downloads/SSDSE-C-2023.xlsx")
+colnames(data) <- data[1,]
+data <- data[-1,-c(1:5)]
+```
+
 ## 4. 仮説検定のR実装
 
 今回はt検定について説明します。
 ### t検定
 t検定は```t.test()```関数を使って実行可能。
+
 ### Studentのt検定
