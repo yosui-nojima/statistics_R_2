@@ -104,8 +104,9 @@ t検定は```t.test()```関数を使って実行する。
 - ```var.equal = ```: 等分散かどうかを指定する。```F```で等分散でない（つまりWelchの*t*検定）、```T```で等分散（つまりStudentの*t*検定）
 - ```paired = ```: 対応があるかどうか。```F```で対応がない、```T```で対応がある
 - ```alternative = ```: 両側検定（```"two.sided"```と指定）か、片側検定（```"greater"```または```less```と指定）
-```
+
 下記を実行する。
+```
 t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
@@ -125,7 +126,6 @@ t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
 <img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">
 
 ## 5. 相関分析のR実装
-
 ### 使用するデータ
 相関分析では、『パスタ』の年間支出金額と『チーズ』の年間支出金額を使用する。
 下記を実行して使用するデータを```data```オブジェクトから抽出し、それぞれ```pasta```と```cheese```というオブジェクトに格納する。
@@ -133,15 +133,20 @@ t.test(maguro, sake, var.equal=T, paired=F, alternative = native = "two.sided")
 pasta <- as.numeric(data[,"パスタ"])
 cheese <- as.numeric(data[,"チーズ"])
 ```
-```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）
+```as.numeric()```関数は数値データとしてオブジェクトに出力するための関数。（```as.numeric()```関数を使わずに出力すると、文字列として出力されてしまうため。）\
+### 相関分析の実行
+相関分析は```cor.test()```関数を使って実行する。\
+```cor.test()```関数には以下の引数を指定することが可能。
+- ```x = ```: ２変数のうち一方のデータを入力
+- ```y = ```: ２変数のうちもう一方のデータを入力
+- ```alternative = ```: 両側検定（```"two.sided"```と指定）か、片側検定（```"greater"```または```less```と指定）
+- ```method = ```: 相関分析の手法を指定（```pearson```または```spearman```など）
+- ```conf.level = ```: 相関係数の区間推定を行う際の信頼係数を指定
 
 下記を実行する。
 ```
-
+cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", conf.level = 0.95)
 ```
-- ```x = ```: ２変数のうち一方のデータを入力
-- ```y = ```: ２変数のうちもう一方のデータを入力
-
 
 
 
