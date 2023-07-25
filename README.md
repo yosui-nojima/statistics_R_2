@@ -191,6 +191,8 @@ summary(lr)
 以下の結果が出力される。\
 <img width="414" alt="スクリーンショット 2023-07-25 15 40 30" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/06928e6b-88ca-4627-9241-196cf77dd168">
 
+出力結果の見方は、下記の通り。
+
 
 
 
