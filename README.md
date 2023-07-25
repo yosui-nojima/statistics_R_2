@@ -145,7 +145,7 @@ both2 <- cbind(pasta, cheese)
 plot(both2)
 ```
 下図が出力される。\
-![Rplot11](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f98c7492-b313-4d94-86c7-322a5ad5b740)
+![Rplot15](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/97d7a672-649f-46f1-91f6-820b522230fc)
 
 散布図のみでは関連性の主張は定性的であるため、2変数間の線形性の指標である相関係数（Pearsonの相関係数）を算出する。
 
@@ -163,7 +163,7 @@ plot(both2)
 cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", conf.level = 0.95)
 ```
 以下の結果が出力される。\
-<img width="384" alt="スクリーンショット 2023-07-25 14 43 45" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/8fbb32ea-f9bf-4cf7-9ad6-cf4a2f32e8c5">\
+<img width="387" alt="スクリーンショット 2023-07-25 16 32 17" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/24404f51-ec81-469c-8e2d-b77378268c7c">\
 一番下の数値がPearsonの相関係数を示しており、0.7を超えている。つまり、『パスタ』の年間支出金額と『チーズ』の年間支出金額には正に強い相関がある。\
 また、```p-value = 2.369e-09```の部分が無相関の検定での*P*値を意味する。\
 有意水準αを5%とすると、*P*<αのため帰無仮説(H0:ρ=0)は棄却される。\
@@ -180,7 +180,7 @@ abline(lr, col="red")
 ```lm()```関数では、目的関数を入力し、~(チルダ)、説明変数の順番で引数を入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
 ```abline()```関数は、で先に出力した散布図に標本回帰直線を追加する。\
 下図が出力される。\
-![Rplot12](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/66e42033-2386-4005-ad41-3ca969cf8116)
+![Rplot16](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/5660629c-11ce-4719-89c3-f2db208eae8c)
 
 線形回帰分析の結果を出力する。
 下記を実行する。
@@ -189,7 +189,7 @@ summary(lr)
 ```
 ```summary()```関数は、```lm()```関数で出力したオブジェクトの概要を出力する。
 以下の結果が出力される。\
-<img width="414" alt="スクリーンショット 2023-07-25 15 40 30" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/06928e6b-88ca-4627-9241-196cf77dd168">
+<img width="411" alt="スクリーンショット 2023-07-25 16 32 43" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/b67d51af-fede-488d-ac98-d7e13df02e81">
 
 出力結果の見方は、下記の通り。\
 ﻿﻿<img width="1167" alt="スクリーンショット 2023-07-25 15 59 29" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f8ea1957-fff3-4943-b650-ea2db99d7c99">
