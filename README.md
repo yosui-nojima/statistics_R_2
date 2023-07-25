@@ -194,7 +194,7 @@ summary(lr)
 出力結果の見方は、下記の通り。\
 ﻿﻿<img width="1166" alt="スクリーンショット 2023-07-25 15 54 58" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/bf0a0a4b-eae0-4899-a086-5da218d8b199">
 
-これらの情報を標本回帰直線付き散布図に入力する。\
+これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に入力する。\
 <img width="601" alt="スクリーンショット 2023-07-25 15 36 32" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/50d11c00-988a-47ae-be12-c7abbef5030c">
 
 
