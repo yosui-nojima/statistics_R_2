@@ -23,28 +23,32 @@
 #### 2. 『SSDSE（教育用標準データセット）』をクッリク
 <img width="2559" alt="スクリーンショット 2023-07-25 12 54 16" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/181adf1e-2649-4e70-a901-f996464c2d5e">
 
-#### 3. この演習では、『SSDSE-C-2023』のデータを使用する
+#### 3. この演習では、『SSDSE-C-2023』のデータをクリックしてダウンロードする
 <img width="1281" alt="スクリーンショット 2023-07-25 12 54 31" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/d45e187d-b3f1-4428-a5b8-7efbff7787d6">
+
+#### 4. 任意の表計算ソフトで開くと以下の内容を含むデータを確認することができる
+
+
 
 ### エクセルファイルをR上で読み込む
 エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要があります。\
-また、今回はサーバーから直接R上に読み込む。エクセル上で実際にファイルを確認したい人は上記の**使用するファイルについて**でファイルをダウンロードしてして下さい。
+また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存されている。）\
 下記をR上で実行する。
 ```
 install.packages("openxlsx")
 ```
 R上でエクセルファイルを読み込む。
 ```
-data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx", colNames = T)
-colnames(data) <- data[1,]
-row.names(data) <- data[,2]
-data <- data[-1,-c(1:5)]
+data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx", colNames = T) #ファイルの読み込み
+colnames(data) <- data[1,] #列名の指定
+row.names(data) <- data[,2] #行明の指定
+data <- data[-1,-c(1:5)] #不要な行・列の削除
 ```
 
 ## 4. 仮説検定のR実装
-
-今回はt検定について説明します。
+今回は仮説検定のうち、t検定について説明します。
 ### t検定
-t検定は```t.test()```関数を使って実行可能。
+t検定は```t.test()```関数を使って実行可能。\
+今回は読み込んだデータのうち、
 
 ### Studentのt検定
