@@ -78,7 +78,7 @@ b <- barplot(xm, ylab = "Yen", ylim = c(0, max(xm + xs)))
 arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
 ```
 下図が出力される。\
-![Rplot13](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/93143b87-20ff-4f56-b20e-e36ab44bea89)
+![Rplot14](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/4dce1e45-319b-45a6-9e35-a068974bdfa6)
 
 棒の頂点が平均値を示す。\
 標準偏差はエラーバー（棒の上についているひげの部分）で示している。\
@@ -91,7 +91,7 @@ arrows(b, xm - xs, b, xm + xs, code = 3, lwd = 1, angle = 90, length = 0.1)
 var.test(maguro, sake, alternative = "two.sided")
 ```
 以下の結果が出力される。\
-<img width="435" alt="スクリーンショット 2023-07-25 13 50 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f54cd568-8a58-4cc5-992b-ee559015b040">\
+<img width="428" alt="スクリーンショット 2023-07-25 16 31 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/266d9af5-199f-488e-81e3-60af5f6a6709">\
 ```p-value = 1.325e-12```の部分が*P*値を意味する。\
 有意水準αを5%とすると、*P*<αのため帰無仮説(H0:σ1=σ2)は棄却される。つまり、『まぐろ』の全国の年間支出金額の分散と『さけ』の全国の年間支出金額の分散は異なると言える。\
 したがって、その後に平均の差の検定でt検定を行う場合は、Welchの*t*検定を行う。
@@ -111,7 +111,7 @@ t検定は```t.test()```関数を使って実行する。
 t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
-<img width="437" alt="スクリーンショット 2023-07-25 14 09 01" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/782bd0a4-9013-4181-8cbb-826834fc4d58">\
+<img width="437" alt="スクリーンショット 2023-07-25 16 31 16" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/4c58830c-9559-4829-8836-2806e6f20fde">\
 ```p-value = 0.06738```の部分が*P*値を意味する。\
 有意水準αを5%とすると、*P*>αのため帰無仮説(H0:µ1=µ2)が採択される。\
 つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
@@ -124,7 +124,7 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 t.test(maguro, sake, var.equal=T, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
-<img width="443" alt="スクリーンショット 2023-07-25 14 12 48" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3d5f2f1d-4adf-4bdf-9551-5db71994b9c4">
+<img width="437" alt="スクリーンショット 2023-07-25 16 31 34" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/89f52ff2-ff14-41a6-af54-cfc03cb40666">
 
 ## 5. 相関分析のR実装
 ### 使用するデータ
