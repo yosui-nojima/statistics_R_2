@@ -1,4 +1,4 @@
-# 2023年度 統計学C-Ⅰ工（地）水曜４限 2023年7月26日 15:10~16:40
+あらわ# 2023年度 統計学C-Ⅰ工（地）水曜４限 2023年7月26日 15:10~16:40
 # R実習
 
 ## 1. データ解析の再現性
@@ -142,13 +142,8 @@ cheese <- as.numeric(data[,"チーズ"])
 both2 <- cbind(pasta, cheese)
 plot(both2)
 ```
-![Rplot09](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/702415b8-37b0-4498-a165-b408b3052d89)\
-
-棒の頂点が平均値を示す。\
-標準偏差はエラーバー（上図の棒の上についているひげの部分）で示している。\
-次のこのグラフで見られる差が本質的な差かどうかを仮説検定により調査する。
-
-
+![Rplot10](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/29420563-2125-41be-93f2-bc8cf7e41cbd)\
+散布図のみでは関連性の主張は定性的であるため、２変数間の線形性の指標である相関係数（Pearsonの相関係数）を算出する。
 
 ### 相関分析の実行
 相関分析は```cor.test()```関数を使って実行する。\
@@ -163,6 +158,7 @@ plot(both2)
 ```
 cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", conf.level = 0.95)
 ```
+以下の結果が出力される。\
 
 
 
