@@ -146,6 +146,7 @@ plot(both2)
 ```
 下図が出力される。\
 ![Rplot11](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/f98c7492-b313-4d94-86c7-322a5ad5b740)
+
 散布図のみでは関連性の主張は定性的であるため、2変数間の線形性の指標である相関係数（Pearsonの相関係数）を算出する。
 
 ### 相関分析の実行
