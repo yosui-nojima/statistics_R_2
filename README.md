@@ -176,7 +176,7 @@ cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", c
 lr <- lm(pasta ~ cheese, data=data.frame(both2))
 abline(lr, col="red")
 ```
-```lm()```関数では、目的関数、~(チルダ)、説明変数の順番で引数を入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
+```lm()```関数では、目的関数、~(チルダ)、説明変数の順番で入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
 ```abline()```関数は、で先に出力した散布図に標本回帰直線を追加する。\
 下図が出力される。\
 ![Rplot16](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/5660629c-11ce-4719-89c3-f2db208eae8c)
