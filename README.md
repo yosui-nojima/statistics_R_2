@@ -170,7 +170,7 @@ cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", c
 ```
 lr <- lm(pasta ~ cheese, data=data.frame(both2))
 ```
-```lm()```関数では、目的関数、~(チルダ)、説明変数の順番で入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
+```lm()```関数では、目的関数、~(チルダ)、説明変数の順番で入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。
 
 線形回帰分析の結果を出力する。
 下記を実行する。
@@ -196,7 +196,7 @@ plot(both2, main = paste("y = ", round(lr[["coefficients"]][["(Intercept)"]], di
 ```
 abline(lr, col="red")
 ```
-```abline()```関数は、で先に出力した散布図に直線を追加する関数。\
+```abline()```関数は、先に出力した散布図に直線を追加する関数。\
 下図が出力される。
 ![Rplot17](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/337f679b-cff3-4dde-8d80-301b7e3f169f)
 
