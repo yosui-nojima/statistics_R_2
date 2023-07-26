@@ -6,7 +6,7 @@
 ### 2. [仮説検定のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#2-%E4%BB%AE%E8%AA%AC%E6%A4%9C%E5%AE%9A%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
 ### 3. [相関分析のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#3-%E7%9B%B8%E9%96%A2%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
 ### 4. [線形回帰分析のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#4-%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
-### 5. [レポート課題](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#5-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C)
+### 5. [レポート課題](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#5-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C-1)
 
 ## 1. 使用するデータ
 [独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用にが作成・公開している統計データ。\
