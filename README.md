@@ -193,7 +193,7 @@ summary(lr)
 したがって、チーズの年間支出金額が増えると、パスタの年間支出金額も増えると言える。\
 チーズの年間支出金額は、パスタの年間支出金額に関連する因子の１つであると考えられる。
 
-続いて、これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する。\
+続いて、これらの情報のうち、切片、傾き、決定係数を散布図に記入する。\
 下記を実行する。
 ```
 plot(both2, main = paste("y = ", round(lr[["coefficients"]][["(Intercept)"]], digits = 3), " + ", round(lr[["coefficients"]][["cheese"]], digits = 3), "x",  ", ", "R^2 = ", round(summary(lr)[["r.squared"]], digits = 3), sep = ""))
