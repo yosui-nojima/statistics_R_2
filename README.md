@@ -169,12 +169,8 @@ cor.test(x = pasta, y = cheese, alternative = "two.sided", method = "pearson", c
 下記を実行する。
 ```
 lr <- lm(pasta ~ cheese, data=data.frame(both2))
-abline(lr, col="red")
 ```
 ```lm()```関数では、目的関数、~(チルダ)、説明変数の順番で入力する。```data = ```引数にはデータフレーム型のオブジェクトを指定する。ここでは、```lr```オブジェクトとして出力している。\
-```abline()```関数は、で先に出力した散布図に標本回帰直線を追加する。\
-下図が出力される。\
-![Rplot16](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/5660629c-11ce-4719-89c3-f2db208eae8c)
 
 線形回帰分析の結果を出力する。
 下記を実行する。
@@ -188,7 +184,20 @@ summary(lr)
 出力結果の見方は、下記の通り。\
 ﻿﻿<img width="707" alt="スクリーンショット 2023-07-25 16 47 08" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3a2a9496-328d-4083-a054-4b6c92bac6ad">
 
-これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する（WordやPowerPointなど任意のソフトを用いて）。\
+これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する。\
+下記を実行する。
+```
+plot(both2, main = paste("y = ", round(lr[["coefficients"]][["(Intercept)"]], digits = 3), " + ", round(lr[["coefficients"]][["cheese"]], digits = 3), "x",  ", ", "R^2 = ", round(summary(lr)[["r.squared"]], digits = 3), sep = ""))
+```
+散布図の上に１次関数式、決定係数（R^2）が記載された下図が出力される。\
+
+最後に標本回帰直線を散布図に追加する。
+```
+abline(lr, col="red")
+```
+```abline()```関数は、で先に出力した散布図に直線を追加する関数。\
+
+（WordやPowerPointなど任意のソフトを用いて）。\
 <img width="651" alt="スクリーンショット 2023-07-25 16 46 24" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/7b50a4b4-9145-48ee-9e12-6cce6fe23cbc">
 
 ## 5. レポート課題
