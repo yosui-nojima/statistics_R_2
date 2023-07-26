@@ -126,7 +126,7 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
 
 #### Studentの*t*検定
-F検定で帰無仮説(H<sub>0</sub>: σ<sub>1</sub>=σ<sub>2</sub>)が採択され、2群の平均の差の検定を行う場合は、Studentの*t*検定を選択する。\
+F検定で帰無仮説(H<sub>0</sub>: σ<sub>1</sub>=σ<sub>2</sub>)が採択され、2群の平均の差の検定で*t*検定を行う場合は、Studentの*t*検定を選択する。\
 ```var.equal = T```に変えて下記を実行する。\
 下記を実行する。
 ```
