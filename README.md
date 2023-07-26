@@ -55,7 +55,7 @@ data <- data[,-grep("　", colnames(data))] #不要な列の削除
 colnames(data)
 ```
 以下の結果が出力される。\
-<img width="1678" alt="スクリーンショット 2023-07-26 13 18 57" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/ccd41979-c717-4b13-b593-dafe4db80062">
+<img width="1679" alt="スクリーンショット 2023-07-26 13 24 22" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3c4faaeb-aced-4c1a-8271-65a651b06a92">
 
 以降の**2. 仮説検定のR実装**、**3. 相関分析のR実装**、**4. 線形回帰分析のR実装**ではこの中から任意の列を選択する。
 
