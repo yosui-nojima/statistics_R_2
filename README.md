@@ -188,7 +188,7 @@ summary(lr)
 出力結果の見方は、下記の通り。\
 ﻿﻿<img width="707" alt="スクリーンショット 2023-07-25 16 47 08" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3a2a9496-328d-4083-a054-4b6c92bac6ad">
 
-これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する（パワーポイントなど任意のソフトを用いて）。\
+これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する（WordやPowerPointなど任意のソフトを用いて）。\
 <img width="651" alt="スクリーンショット 2023-07-25 16 46 24" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/7b50a4b4-9145-48ee-9e12-6cce6fe23cbc">
 
 ## 5. レポート課題
