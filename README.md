@@ -47,7 +47,7 @@ data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2023.xlsx") #ファ
 colnames(data) <- data[1,] #列名の指定
 row.names(data) <- data[,3] #行名の指定
 data <- data[-c(1,2),-c(1:5)] #不要な行・列の削除
-data2 <- data[,-grep("0", colnames(data))] #不要な列の削除
+data <- data[,-grep("0", colnames(data))] #不要な列の削除
 ```
 どのような項目があるかは、データの列名を確認すればよい。\
 下記を実行する。
