@@ -188,8 +188,11 @@ summary(lr)
 
 出力結果の見方は、下記の通り。\
 ﻿﻿<img width="707" alt="スクリーンショット 2023-07-25 16 47 08" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/3a2a9496-328d-4083-a054-4b6c92bac6ad">
+これらの結果から、チーズの年間支出金額が増えると、パスタの年間支出金額も増えることがわかる。\
+また、有意水準αを5%とすると、チーズの*P*値は*P*<αのため帰無仮説(H0:β=0)は棄却される。\
+したがって、チーズの年間支出金額からパスタの年間支出金額は予測可能であると言える。\
 
-これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する。\
+続いて、これらの情報のうち、切片、傾き、決定係数を標本回帰直線付き散布図に記入する。\
 下記を実行する。
 ```
 plot(both2, main = paste("y = ", round(lr[["coefficients"]][["(Intercept)"]], digits = 3), " + ", round(lr[["coefficients"]][["cheese"]], digits = 3), "x",  ", ", "R^2 = ", round(summary(lr)[["r.squared"]], digits = 3), sep = ""))
