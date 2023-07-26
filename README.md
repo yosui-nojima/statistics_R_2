@@ -103,7 +103,7 @@ var.test(x = maguro, y = sake, alternative = "two.sided")
 <img width="428" alt="スクリーンショット 2023-07-25 16 31 03" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/266d9af5-199f-488e-81e3-60af5f6a6709">\
 ```p-value = 2.431e-12```の部分が*P*値を意味する。\
 有意水準αを5%とすると、*P*<αのため帰無仮説(H<sub>0</sub>: σ<sub>1</sub>=σ<sub>2</sub>)は棄却される。つまり、『まぐろ』の全国の年間支出金額の分散と『さけ』の全国の年間支出金額の分散は異なると言える。\
-したがって、その後に平均の差の検定でt検定を行う場合は、Welchの*t*検定を行う。
+したがって、この後に2群の平均の差の検定でt検定を行う場合は、Welchの*t*検定を選択する。
 
 ### *t*検定
 t検定は```t.test()```関数を使って実行する。
@@ -126,7 +126,7 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
 
 #### Studentの*t*検定
-念のためStudentの*t*検定の実行方法も記載する。\
+F検定で帰無仮説(H<sub>0</sub>: σ<sub>1</sub>=σ<sub>2</sub>)が採択され、2群の平均の差の検定を行う場合は、Studentの*t*検定を選択する。\
 ```var.equal = T```に変えて下記を実行する。\
 下記を実行する。
 ```
