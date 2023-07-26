@@ -34,6 +34,9 @@
 [https://www.nstac.go.jp/sys/files/kaisetsu-C-2023.pdf](https://www.nstac.go.jp/sys/files/kaisetsu-C-2023.pdf)
 
 ### エクセルファイルをR上で読み込む
+RとRStudioは前回（2023年5月17日）の実習講義でインストール済み。\
+RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics-C1_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。
+
 エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要がある。\
 また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存される。）\
 下記をR上で実行する。
