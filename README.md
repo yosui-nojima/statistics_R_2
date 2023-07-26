@@ -35,7 +35,7 @@
 
 ### エクセルファイルをR上で読み込む
 RとRStudioは前回（2023年5月17日）の実習講義でインストール済み。\
-RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics-C1_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。
+RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics-C1_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。\
 下記の画面が表示される場合は（新しいバージョンに更新するかを聞いている）、『Remind Later』（後で再通知）を選択。
 
 <img width="443" alt="スクリーンショット 2023-07-26 13 36 29" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/a0143119-8f7c-4cae-b266-7c3561a02ed5">
