@@ -190,12 +190,15 @@ summary(lr)
 plot(both2, main = paste("y = ", round(lr[["coefficients"]][["(Intercept)"]], digits = 3), " + ", round(lr[["coefficients"]][["cheese"]], digits = 3), "x",  ", ", "R^2 = ", round(summary(lr)[["r.squared"]], digits = 3), sep = ""))
 ```
 散布図の上に１次関数式、決定係数（R^2）が記載された下図が出力される。\
+![Rplot18](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/5a8550e2-4f94-4619-8a95-4845be4c342f)
 
 最後に標本回帰直線を散布図に追加する。
 ```
 abline(lr, col="red")
 ```
 ```abline()```関数は、で先に出力した散布図に直線を追加する関数。\
+下図が出力される。
+![Rplot17](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/337f679b-cff3-4dde-8d80-301b7e3f169f)
 
 （WordやPowerPointなど任意のソフトを用いて）。\
 <img width="651" alt="スクリーンショット 2023-07-25 16 46 24" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/7b50a4b4-9145-48ee-9e12-6cce6fe23cbc">
