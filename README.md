@@ -203,10 +203,8 @@ abline(lr, col="red")
 ```
 ```abline()```関数は、先に出力した散布図に直線を追加する関数。\
 下図が出力される。
-![Rplot17](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/337f679b-cff3-4dde-8d80-301b7e3f169f)
 
-（WordやPowerPointなど任意のソフトを用いて）。\
-<img width="651" alt="スクリーンショット 2023-07-25 16 46 24" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/7b50a4b4-9145-48ee-9e12-6cce6fe23cbc">
+![Rplot17](https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/337f679b-cff3-4dde-8d80-301b7e3f169f)
 
 ## 5. レポート課題
 以下の内容をRで実行し、レポートを作成すること。
