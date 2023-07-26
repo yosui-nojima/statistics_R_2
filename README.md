@@ -40,7 +40,7 @@ RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起
 
 <img width="443" alt="スクリーンショット 2023-07-26 13 36 29" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/a0143119-8f7c-4cae-b266-7c3561a02ed5">
 
-コンソールの立ち上げは、前回実習講義の[R実行の準備](https://github.com/yosui-nojima/statistics-C1_R_1#7-r%E5%AE%9F%E8%A1%8C%E3%81%AE%E6%BA%96%E5%82%99)を参照
+Rスクリプトを入力する画面の立ち上げは、前回実習講義の[R実行の準備](https://github.com/yosui-nojima/statistics-C1_R_1#7-r%E5%AE%9F%E8%A1%8C%E3%81%AE%E6%BA%96%E5%82%99)を参照
 
 エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要がある。\
 また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存される。）\
