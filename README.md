@@ -2,7 +2,7 @@
 # R実習
 
 ## 目次
-### 1. 使用するデータ
+### 1. [使用するデータ](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#1-%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF-1)
 ### 2. 仮説検定のR実装
 ### 3. 相関分析のR実装
 ### 4. 線形回帰分析のR実装
