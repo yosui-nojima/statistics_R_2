@@ -9,7 +9,7 @@
 ### 5. [レポート課題](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#5-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C-1)
 
 ## 1. 使用するデータ
-[独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用にが作成・公開している統計データ。\
+[独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用に作成・公開している統計データ。\
 今回は、2023年度版の家計調査データ（総務省統計局「家計調査」2020年（令和2年）～2022年（令和4年））を取得し、解析用データとする。
 ### 使用するファイルについて
 #### 1. 赤枠の『統計を活かす』をクリック
