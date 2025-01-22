@@ -129,9 +129,9 @@ t.test(x = maguro, y = sake, var.equal=F, paired=F, alternative = "two.sided")
 ```
 以下の結果が出力される。\
 <img width="538" alt="Image" src="https://github.com/user-attachments/assets/2a41835c-3461-4785-b374-71ea2abe3dc3" />\
-```p-value = 0.06544```の部分が*P*値を意味する。\
-有意水準αを5%とすると、*P*>αのため帰無仮説(H<sub>0</sub>: µ<sub>1</sub>=µ<sub>2</sub>)が採択される。\
-つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるとは言えない。
+```p-value = 0.03505```の部分が*P*値を意味する。\
+有意水準αを5%とすると、*P*<αのため帰無仮説(H<sub>0</sub>: µ<sub>1</sub>=µ<sub>2</sub>)は棄却される。\
+つまり、『まぐろ』の全国の年間支出金額の平均と『さけ』の全国の年間支出金額の平均は異なるといえる。
 
 #### Studentの*t*検定
 F検定で帰無仮説(H<sub>0</sub>: σ<sub>1</sub>=σ<sub>2</sub>)が採択され、2群の平均の差の検定で*t*検定を行う場合は、Studentの*t*検定を選択する。\
