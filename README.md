@@ -2,11 +2,11 @@
 # R実習
 
 ## 目次
-### 1. [使用するデータ](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#1-%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF-1)
-### 2. [仮説検定のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#2-%E4%BB%AE%E8%AA%AC%E6%A4%9C%E5%AE%9A%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
-### 3. [相関分析のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#3-%E7%9B%B8%E9%96%A2%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
-### 4. [線形回帰分析のR実装](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#4-%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
-### 5. [レポート課題](https://github.com/yosui-nojima/statistics-C1_R_2/blob/main/README.md#5-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C-1)
+### 1. [使用するデータ](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#1-%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF-1)
+### 2. [仮説検定のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#2-%E4%BB%AE%E8%AA%AC%E6%A4%9C%E5%AE%9A%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
+### 3. [相関分析のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#3-%E7%9B%B8%E9%96%A2%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
+### 4. [線形回帰分析のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#4-%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
+### 5. [レポート課題](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#5-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C-1)
 
 ## 1. 使用するデータ
 [独立行政法人統計センター](https://www.nstac.go.jp/)が公開しているSSDSE（教育用標準データセット：Standardized Statistical Data Set for Education）は、データサイエンス演習、統計教育用に作成・公開している統計データ。\
@@ -35,12 +35,12 @@
 
 ### エクセルファイルをR上で読み込む
 RとRStudioは前回（2024年10月31日）の実習講義でインストール済み。\
-RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics-C1_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。\
+RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。\
 下記の画面が表示される場合は（新しいバージョンに更新するかを聞いている）、『Remind Later』（後で再通知）を選択。
 
-<img width="443" alt="スクリーンショット 2023-07-26 13 36 29" src="https://github.com/yosui-nojima/statistics-C1_R_2/assets/85273234/a0143119-8f7c-4cae-b266-7c3561a02ed5">
+<img width="443" alt="スクリーンショット 2023-07-26 13 36 29" src="https://github.com/yosui-nojima/statistics_R_2/assets/85273234/a0143119-8f7c-4cae-b266-7c3561a02ed5">
 
-Rスクリプトを入力する画面の立ち上げは、前回実習講義の[R実行の準備](https://github.com/yosui-nojima/statistics-C1_R_1#7-r%E5%AE%9F%E8%A1%8C%E3%81%AE%E6%BA%96%E5%82%99)を参照
+Rスクリプトを入力する画面の立ち上げは、前回実習講義の[R実行の準備](https://github.com/yosui-nojima/statistics_R_1#7-r%E5%AE%9F%E8%A1%8C%E3%81%AE%E6%BA%96%E5%82%99)を参照
 
 エクセルファイルの読み込みはデフォルト状態のRではできないため、```openxlsx```ライブラリーをインストールする必要がある。\
 また、今回はサーバーから直接R上に読み込む。（ダウンロードしたファイルは任意のダウンロードファルダに保存される。）\
@@ -249,7 +249,7 @@ abline(lr, col="red")
 - 選択した群（1. 仮説検定の場合）および 変数の名前（2. 相関分析、3. 線形回帰分析の場合）
 - 実行したRのコード
 - 実行後の出力結果
-- 実行後に出力された図（図の出力方法は、前回実習講義の[図の保存方法](https://github.com/yosui-nojima/statistics-C1_R_1#%E5%9B%B3%E3%81%AE%E4%BF%9D%E5%AD%98%E6%96%B9%E6%B3%95)を参照。）
+- 実行後に出力された図（図の出力方法は、前回実習講義の[図の保存方法](https://github.com/yosui-nojima/statistics_R_1#%E5%9B%B3%E3%81%AE%E4%BF%9D%E5%AD%98%E6%96%B9%E6%B3%95)を参照。）
 - 仮説検定、相関分析、線形回帰分析のそれぞれの分析結果の結論
 
 
