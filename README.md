@@ -18,10 +18,13 @@
 #### 2. 赤枠の『SSDSE（教育用標準データセット）』をクッリク
 <img width="1728" alt="Image" src="https://github.com/user-attachments/assets/e7063c24-1ec3-4982-9a08-8e47baf2d0d1" />
 
-#### 3. 赤枠の『SSDSE-C-2023』のデータをクリックしてダウンロードする
-<img width="1728" alt="Image" src="https://github.com/user-attachments/assets/c1f78054-5f4e-4582-85eb-55d62cb072cc" />
+#### 3. 赤枠の『過去に公開したSSDSE-Cはこちらから』をクリックしてダウンロードする
+<img width="1780" height="912" alt="Image" src="https://github.com/user-attachments/assets/9caabfc5-4967-4e9e-9abd-62d50d7ee402" />
 
-#### 4. 任意の表計算ソフトで開くと以下の内容を含むデータを確認することができる
+#### 4. 赤枠の『SSDSE-C-2024』のデータをクリックしてダウンロードする
+<img width="1618" height="783" alt="Image" src="https://github.com/user-attachments/assets/7e28055a-9e51-421d-90e1-8b1aac517fc5" />
+
+#### 5. 任意の表計算ソフトで開くと以下の内容を含むデータを確認することができる
 数値の単位は、世帯人員は『人』（小数点以下２桁）、他はすべて『円』。
 データは平均値を表しており、\
 （2021年歴年データ ＋ 2022年歴年データ ＋ 2023年歴年データ）÷ ３\
@@ -29,7 +32,7 @@
 また、各食料品の項目の数値は、都道府県庁所在市別、二人以上の世帯の１世帯当たりの品目別の年間支出金額を表している。
 <img width="1728" alt="Image" src="https://github.com/user-attachments/assets/e978ed49-3ca3-4769-9fd1-665423c26f5e" />
 
-#### 5. 使用するデータの詳細
+#### 6. 使用するデータの詳細
 今回使用するデータの詳細（データの出典や単位など）は下記を参照すること。\
 [https://www.nstac.go.jp/sys/files/kaisetsu-C-2024.pdf](https://www.nstac.go.jp/sys/files/kaisetsu-C-2024.pdf)
 
