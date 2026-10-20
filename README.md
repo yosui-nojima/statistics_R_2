@@ -37,7 +37,7 @@
 [https://www.nstac.go.jp/sys/files/kaisetsu-C-2024.pdf](https://www.nstac.go.jp/sys/files/kaisetsu-C-2024.pdf)
 
 ### エクセルファイルをR上で読み込む
-RとRStudioは前回（2024年10月31日）の実習講義でインストール済み。\
+RとRStudioは前回の実習講義でインストール済み。\
 RStudioによるRの起動方法は前回実習講義の[RStudioによるRの起動](https://github.com/yosui-nojima/statistics_R_1#6-rstudio%E3%81%AB%E3%82%88%E3%82%8Br%E3%81%AE%E8%B5%B7%E5%8B%95)を参照。\
 下記の画面が表示される場合は（新しいバージョンに更新するかを聞いている）、『Remind Later』（後で再通知）を選択。
 
