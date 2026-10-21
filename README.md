@@ -4,7 +4,7 @@
 ## 目次
 ### 1. [使用するデータ](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#1-%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF-1)
 ### 2. [相関分析のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#3-%E7%9B%B8%E9%96%A2%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
-### 3. [線形回帰分析のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#4-%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
+### 3. [線形回帰分析のR実装](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#3-%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%AEr%E5%AE%9F%E8%A3%85-1)
 ### 4. [レポート課題](https://github.com/yosui-nojima/statistics_R_2/blob/main/README.md#4-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E8%AA%B2%E9%A1%8C-1)
 
 ## 1. 使用するデータ
