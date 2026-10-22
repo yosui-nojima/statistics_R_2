@@ -64,6 +64,14 @@ data <- data[,-grep("　", colnames(data))] #不要な列の削除
 ```
 colnames(data)
 ```
+```colnames(data)```で列名が出力されない場合は、上記の```data <- data[,-grep("　", colnames(data))] #不要な列の削除```を削除した下記を実行し直して下さい。
+```
+library(openxlsx)
+data <- read.xlsx("https://www.nstac.go.jp/sys/files/SSDSE-C-2024.xlsx") #ファイルの読み込み
+colnames(data) <- data[1,] #列名の指定
+row.names(data) <- data[,3] #行名の指定
+data <- data[-c(1,2),-c(1:5,216:229)] #不要な行・列の削除
+```
 以下の結果が出力される。\
 <img width="1447" alt="Image" src="https://github.com/user-attachments/assets/f0abe8b5-8b52-4ff6-a54f-a0d71a739c44" />
 
